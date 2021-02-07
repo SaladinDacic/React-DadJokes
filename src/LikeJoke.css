@@ -1,0 +1,35 @@
+.Like-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+}
+
+.Like-Circle-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+}
+.Like-Circle-number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 1px #8362b9;
+}
+
+.Like-Smiley-body{
+    font-size: 4em;
+}
+
+.fa-arrow-up{
+    cursor: pointer;
+}
+.fa-arrow-down{
+    cursor: pointer;
+}

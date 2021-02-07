@@ -1,0 +1,118 @@
+.JokeList-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #013A6B;
+    background-image: -webkit-linear-gradient(-40deg, #a7ddf6 60%, #e64e7d 40%);
+
+}
+.JokeList-body-c{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 60vw;
+    background-color: #fcfcfb;
+    overflow-y: scroll;
+    box-shadow: 5px 5px 0px 0px #3a2b53, inset 3px 3px 13px 3px #312447;
+    /* transform: scale(0.98); */
+}
+.loader{
+    border: 12px solid gray;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-color: #b8b894;
+    border-top-color: #99ff33;
+    border-bottom-color: #00ccff;
+    
+    border-radius: 50%;
+    animation: rotateIt 2s infinite cubic-bezier(0.420, -0.600, 0.670, 1.610);
+  }
+
+.JokeList-body-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    height: 90vh;
+    width: 20vw;
+    background-color: #8261bb;
+    box-shadow: 10px 15px 7px 2px #3a2b53, inset 3px 3px 13px 3px #312447;
+    z-index: 2;
+    /* transform: scale(0.98); */
+    
+}
+.JokeList-body-b .dad{
+    font-size: 2em;
+    color: white;
+}
+.JokeList-body-b .jokes{
+    font-size: 1.5em;
+    font-weight: 100;
+    color: white;
+    
+}
+.JokeList-body-b .smiley{
+    font-size: 10em;
+    padding: 0;  
+    transform: translateY(-100px);
+    border-radius: 50%;
+    
+}
+.JokeList-body-b button{
+    background-image: -webkit-linear-gradient(-40deg, #a7ddf6 60%, #e64e7d 40%);
+    border-radius: 30px;
+    font-size: 2em;
+    height: 2.2em;
+    transform: translateY(-160px);
+    outline: none;
+    color: white;
+    border: 2px solid #8261bb;
+    box-shadow: 5px 5px 0px 0px #3a2b53, inset 3px 3px 13px 3px #312447;
+    cursor: pointer;
+    transition:all 0.2s ease-out;
+}
+.JokeList-body-b button:hover{
+    background-image: -webkit-linear-gradient(-40deg, #669cb4 60%, #9b2b4e 40%);
+    box-shadow: 3px 3px 0px 0px #3a2b53, inset 3px 3px 13px 3px #312447;
+}
+.JokeList-body-b button:active{
+    background-image: -webkit-linear-gradient(-40deg, #3a5e6d 60%, #421322 40%);
+    box-shadow: 1px 1px 0px 0px #3a2b53, inset 3px 3px 13px 3px #312447;
+}
+
+.JokeList-body-content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    padding: 15px 75px;
+    margin: auto;
+    border-bottom: 1px solid black;
+    
+}
+
+.JokeList-body-jokes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes rotateIt{
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+      border-top-color: #800000;
+      border-bottom-color: #800000;
+    }
+    100%{
+      transform: rotate(540deg);
+    }
+  }
